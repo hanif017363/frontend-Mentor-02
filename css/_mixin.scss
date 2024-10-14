@@ -1,0 +1,36 @@
+@mixin container() {
+  color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  list-style: none;
+  gap: 5px;
+  text-align: center;
+
+  background-color: rgba(128, 128, 128, 0.11);
+  border: 1px solid rgba(128, 128, 128, 0.11);
+  border-radius: 10px;
+  width: 250px;
+}
+@mixin description() {
+  // title h2 css
+  &__title {
+    font-weight: 700px;
+    font-size: 32px;
+    margin-bottom: 0;
+    &:hover {
+      color: greenyellow;
+    }
+  }
+  // card text
+  &__text {
+    margin-top: 0;
+    color: greenyellow;
+    font-size: 15px;
+  }
+  // title p
+  &__text--p {
+    font-size: 10px;
+    font-weight: 200;
+  }
+}

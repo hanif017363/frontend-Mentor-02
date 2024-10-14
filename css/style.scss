@@ -1,0 +1,83 @@
+// import
+@import "inheritence";
+@import "mixin";
+@font-face {
+  font-family: myNF;
+  src: url(/design/font/Inter-VariableFont_slnt\,wght.ttf);
+}
+//
+
+body {
+  background-color: rgba(0, 0, 0, 0.918);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+//
+//
+
+.card {
+  @include container();
+
+  // description
+
+  @include description();
+
+  //   img css
+  &__banner {
+    margin-top: 20px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  // ul css
+  &__content {
+    list-style: none;
+    position: relative;
+    right: 20px;
+  }
+  //   li css
+  &__item {
+    line-height: 45px;
+  }
+  //   button css
+  &__btn--git {
+    @extend %btn;
+    padding: 8px 80px;
+  }
+  &__btn--front {
+    @extend %btn;
+    padding: 8px 50px;
+  }
+  &__btn--link {
+    @extend %btn;
+    padding: 8px 75px;
+  }
+  &__btn--twit {
+    @extend %btn;
+    padding: 8px 80px;
+  }
+  &__btn--inst {
+    @extend %btn;
+    padding: 8px 70px;
+  }
+
+  // a css
+  &__link {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 442px) {
+  .card {
+    position: relative;
+
+    top: 178px;
+  }
+}
+@media screen and (min-width: 1184px) {
+  .card {
+    position: relative;
+
+    top: 100px;
+  }
+}

@@ -1,0 +1,11 @@
+%btn {
+  background-color: rgba(128, 128, 128, 0.397);
+  color: aliceblue;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  &:hover {
+    background-color: greenyellow;
+    color: black;
+  }
+}
